@@ -9,11 +9,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/9cc82b0654.js" crossorigin="anonymous"></script>
+    <script>function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+      
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);</script>
     <title>Travel</title>
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar reveal">
         <div class="logo">
             <img src="./Images/Union.png">
             <span>Salty</span>
@@ -45,7 +62,7 @@
             <li>Book Now</li>
         </ul>
     </div>
-    <div class="discover">
+    <div class="discover reveal">
         <div class="discover-content">
             <div class="discover-heading">
                 <h1>Discover the</h1>
@@ -69,7 +86,7 @@
         </div>
         <div class="discover-img">
             <img src="./Images/young-man-holding-passport-with-plane-tickets-smartphone_ccexpress 1.png" width="90%"
-                height="500vh">
+                height="500vh" class = "rotate">
             <div class="card">
                 <div class="card-head"></div>
                 <p align="center">Dubai Moruvami</p>
@@ -81,7 +98,7 @@
             </div>
         </div>
     </div>
-    <div class="categories">
+    <div class="categories reveal">
         <div class="categories-content">
             <h1>Categories</h1>
             <p>Here are lots of interesting destinations to visit,</p>
@@ -89,36 +106,36 @@
             <p>by category.</p>
         </div>
         <div class="categories-gallery">
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4406.png">
-                <p>Beach</p>
+                <p >Beach</p>
             </div>
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4407.png">
-                <p>Desert</p>
+                <p >Desert</p>
             </div>
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4408.png">
                 <p>Mountain</p>
             </div>
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4409.png">
                 <p>Temple</p>
             </div>
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4410.png">
                 <p>Tower</p>
             </div>
-            <div class="gallery-img">
+            <div class="gallery-img shift">
                 <img src="./Images/Rectangle 4411.png">
                 <p>Pyramid</p>
             </div>
         </div>
     </div>
-    <div class="stories">
+    <div class="stories reveal">
         <div class="stories-img">
             <div class="background-div">
-                <img src="./Images/thom-holmes-sbH46HtZls8-unsplash-removebg (1) 2.png" width="100%">
+                <img src="./Images/thom-holmes-sbH46HtZls8-unsplash-removebg (1) 2.png" class="rotate">
             </div>
         </div>
         <div class="stories-content">
@@ -148,7 +165,7 @@
             </div>
         </div>
     </div>
-    <div class="Destination">
+    <div class="Destination reveal">
         <div class="heading">
             <h1>Find Popular</h1>
             <h1>Destination</h1>
@@ -184,7 +201,7 @@
             </div>
         </div>
     </div>
-    <div class="top-destinations">
+    <div class="top-destinations reveal">
         <div class="top-destinations-content">
             <h1>Top Destinations</h1>
             <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
@@ -204,36 +221,36 @@
         </div>
         <div class="top-destinations-gallery">
             <div class="gallery-div">
-                <div class="first-img">
+                <div class="first-img ">
                     <img src="./Images/Rectangle 4389.png" width="100%" height="250vh">
                 </div>
-                <div class="second-img">
+                <div class="second-img ">
                     <img src="./Images/Group.png" width="100%" height="280vh">
                 </div>
             </div>
-            <div class="gallery-div">
+            <div class="gallery-div ">
                 <img src="./Images/Rectangle 4391.png" width="100%">
             </div>
             <div class="gallery-div">
-                <div>
+                <div class = "container">
                     <img src="./Images/Rectangle 4392.png" width="100%">
                 </div>
                 <div class="last-img">
-                    <div class="last-img-div">
+                    <div class="last-img-div ">
                         <img src="./Images/Rectangle 4394.png" width="80%" height="340vh">
                     </div>
-                    <div class="last-img-div">
+                    <div class="last-img-div ">
                         <img src="./Images/Rectangle 4395.png" width="100%" height="340vh">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="about-us">
+    <div class="about-us reveal">
         <div class="about-us-img">
             <div class="background-about-img">
                 <img
-                    src="Images/attractive-guy-with-cool-hairstyle-grey-tshirt-printed-summer-shirt-making-photo-smiling-isolated-orange-backdrop_ccexpress 1.png">
+                    src="Images/attractive-guy-with-cool-hairstyle-grey-tshirt-printed-summer-shirt-making-photo-smiling-isolated-orange-backdrop_ccexpress 1.png" class = "rotate">
             </div>
         </div>
         <div class="about-us-content">
@@ -254,14 +271,14 @@
             </div>
         </div>
     </div>
-    <div class="sign-up">
+    <div class="sign-up reveal">
         <h1>Sign up to our newsletter</h1>
         <p>Recieve latest news,update,and many other things</p>
         <p>every week.</p>
         <img src="./Images/input img.png">
         <input type="text" placeholder="Enter your email address">
     </div>
-    <div class="footer">
+    <div class="footer reveal">
         <div class="footer-logo">
             <img src="./Images/Union.png">
             <span>Salty</span>

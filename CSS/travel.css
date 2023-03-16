@@ -7,7 +7,6 @@
 body {
     background-color: rgba(250, 248, 237, 255);
 }
-
 .navbar {
     display: flex;
     flex-flow: row wrap;
@@ -95,17 +94,17 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    margin-left: 14%;
+    margin-left: 17%;
 }
 
 .change-btn button {
     border-radius: 50%;
-    height: 33px;
     width: 6%;
     height: 9vh;
     background-color: black;
     color: white;
     border: none;
+    margin-right: 1%;
 }
 
 .search-bar {
@@ -129,7 +128,7 @@ body {
 .search-icon {
     width: 25%;
     padding-left: -2%;
-    background-image: url("./Images/search-icon.png");
+    background-image: url("../Images/search-icon.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 10%;
@@ -147,7 +146,7 @@ body {
 .card-head {
     height: 10vh;
     width: 100%;
-    background-image: url("./Images/sand.png");
+    background-image: url("../Images/sand.png");
     background-size: 100% 10vh;
 }
 
@@ -200,12 +199,14 @@ body {
     height: 50vh;
     margin-top: 2%;
     padding-left: 2%;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .gallery-img p {
-    font-size: 15px;
-    font-weight: 700;
     text-align: center;
+    padding-left: 5%;
+    position: fixed;
 }
 
 .stories {
@@ -237,6 +238,7 @@ body {
     top: -35px;
     border-radius: 50%;
     height: 68vh;
+    width: 100%;
 }
 
 .stories-content {
@@ -750,7 +752,9 @@ body {
         width: 100%;
         text-align: center;
     }
-
+    .gallery-img p{
+        padding-left: 34%;
+    }
     .change-btn button {
         display: none;
     }
@@ -931,3 +935,61 @@ body {
         width: 100%;
     }
 }
+.destination-one{
+    transition: width 2s, transform 4s;
+}
+.destination-one:hover{
+    width: 30%;
+  transform: rotate(360deg);
+} 
+a {
+  transition: border-left 0.2s;  
+}
+a:hover{
+    color: black;
+  border-bottom: 3px solid black;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .change-btn:first-child {
+    margin-right: 2%;
+}
+.shift{
+    transition: width 2s,font-size 1s;
+}
+.shift:hover {
+    width: 50%;
+}
+
+  .btn:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+    width: 90%;
+    box-shadow: 5px 10px orange;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+  .rotate{
+    transition: transform 2s;
+  }
+  .rotate:hover{
+    transform: rotateY(360deg);
+  }
