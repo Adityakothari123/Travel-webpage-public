@@ -1,0 +1,933 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body {
+    background-color: rgba(250, 248, 237, 255);
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 2%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.logo {
+    position: relative;
+    width: 10%;
+}
+
+.logo span {
+    position: absolute;
+    top: 20%;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    margin-left: 3%;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(72, 93, 123, 255);
+}
+
+.nav-btn {
+    width: 34%;
+    padding-left: 17%;
+}
+
+.btn {
+    border-color: rgba(247, 138, 108, 255);
+    height: 8vh;
+    border-radius: 20px;
+    width: 70%;
+    background-color: rgba(250, 248, 237, 255);
+    color: rgba(247, 138, 108, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#open-menu {
+    display: none;
+}
+
+.discover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.discover-content {
+    width: 50%;
+    padding-left: 2%;
+    padding-top: 8%;
+}
+
+.discover-content h1 {
+    font-size: 80px;
+    line-height: 20%;
+    font-weight: 900;
+}
+
+.discover-img {
+    width: 50%;
+    height: 100vh;
+    padding-left: 5%;
+    padding-top: 2%;
+    position: relative;
+}
+
+.change-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-left: 14%;
+}
+
+.change-btn button {
+    border-radius: 50%;
+    height: 33px;
+    width: 6%;
+    height: 9vh;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.search-bar {
+    width: 95%;
+    margin-top: 9%;
+    border-radius: 40px;
+    display: flex;
+    background-color: white;
+    padding-left: 6%;
+}
+
+.place {
+    width: 33%;
+    border-right: 1px solid black;
+}
+
+.date {
+    width: 34%;
+}
+
+.search-icon {
+    width: 25%;
+    padding-left: -2%;
+    background-image: url("./Images/search-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.card {
+    position: absolute;
+    width: 30%;
+    top: 58%;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.card-head {
+    height: 10vh;
+    width: 100%;
+    background-image: url("./Images/sand.png");
+    background-size: 100% 10vh;
+}
+
+.card-bottom {
+    width: 100%;
+    height: 4vh;
+    position: relative;
+    margin-top: 0%;
+    padding-top: 9%;
+}
+
+.bottom-one {
+    position: absolute;
+    left: 15%;
+}
+
+.bottom-two {
+    position: absolute;
+    left: 30%
+}
+
+.categories {
+    width: 100%;
+}
+
+.categories-content {
+    width: 100%;
+    height: 50vh;
+    padding-left: 9%;
+}
+
+.categories-content h1 {
+    font-size: 70px;
+}
+
+.categories-content p {
+    line-height: 80%;
+}
+
+.categories-gallery {
+    width: 84%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6%;
+}
+
+.gallery-img {
+    width: 15%;
+    height: 50vh;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+.gallery-img p {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.stories {
+    display: flex;
+}
+
+.stories-img {
+    width: 100%;
+    height: 80vh;
+}
+
+.stories-content {
+    width: 100%;
+    height: 80vh;
+}
+
+.background-div {
+    width: 80%;
+    height: 60vh;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 50%;
+    background-color: rgba(253, 228, 178, 255);
+    position: relative;
+}
+
+.background-div img {
+    position: absolute;
+    top: -35px;
+    border-radius: 50%;
+    height: 68vh;
+}
+
+.stories-content {
+    padding-left: 7%;
+}
+
+.first-line {
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: rgba(246, 111, 77, 255);
+}
+
+.stories-content h1 {
+    font-size: 50px;
+    line-height: 25%;
+}
+
+.text {
+    color: gray;
+    line-height: 5%;
+}
+
+.text-first {
+    margin-top: 8%;
+    color: gray;
+    line-height: 5%;
+}
+
+.cart {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    padding-top: 1%;
+    margin-left: -4%;
+}
+
+.card-info {
+    width: 25%;
+    height: 23vh;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.card-para-two {
+    font-size: 16px;
+    height: 3vh;
+    margin-top: -33%;
+    color: rgba(155, 157, 159, 255);
+}
+
+.card-para-one {
+    color: rgba(246, 111, 77, 255);
+    font-size: 35px;
+    height: 8vh;
+    margin-bottom: 12%;
+    margin-top: 1%;
+}
+
+.destination {
+    width: 100%;
+}
+
+.heading {
+    width: 80%;
+    height: 30vh;
+    padding-left: 3%;
+    font-size: 30px;
+    line-height: 70%;
+    position: relative;
+    margin-left: 10%;
+}
+
+.heading img {
+    top: 0;
+    right: 79px;
+    position: absolute;
+}
+
+.destination-gallary {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+
+.destination-one {
+    width: 30%;
+    height: 80vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding-left: 1%;
+    position: relative;
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+.rate {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.person {
+    position: absolute;
+    width: 20%;
+    left: 55px;
+    font-size: 15px;
+    bottom: 78px;
+}
+
+.book-btn {
+    width: 30%;
+    height: 8vh;
+    position: absolute;
+    right: 26px;
+    bottom: 66px;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: 900;
+    border: 2px solid gray;
+}
+
+.top-destinations {
+    width: 100%;
+    margin-top: 4%;
+}
+
+.top-destinations-content {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.top-destinations-content h1 {
+    font-size: 60px;
+}
+
+.trip-intro {
+    word-spacing: 1px;
+    color: gray;
+    font-size: 15px;
+    line-height: 2%;
+}
+
+.top-destinations-content p {
+    margin-top: -3%;
+}
+
+.destination-btn {
+    width: 10%;
+    height: 8vh;
+    right: 26px;
+    bottom: 6px;
+    border-radius: 40px;
+    background-color: rgba(250, 248, 237, 255);
+    border: 2px solid gray;
+}
+
+.top-destinations-gallery {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.gallery-div {
+    width: 30%;
+    height: 100vh;
+}
+
+.first-img {
+    height: 40vh;
+    width: 100%;
+}
+
+.second-img {
+    height: 30vh;
+    width: 100%;
+    padding-top: 9%;
+}
+
+.last-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.last-img-div {
+    width: 50%;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-img {
+    width: 50%;
+    height: 90vh;
+}
+
+.background-about-img {
+    border-radius: 120px;
+    background-color: rgba(238, 129, 98, 255);
+    height: 71vh;
+    width: 51%;
+    margin-left: 19%;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-about-img img {
+    height: 74vh;
+    width: 97%;
+    margin-top: -4%;
+}
+
+.about-us-content {
+    width: 50%;
+}
+
+.about-us-content h1 {
+    font-size: 50px;
+    line-height: 35%;
+    margin-top: 8%;
+    margin-left: 4%;
+}
+
+.reviews {
+    width: 75%;
+    padding-left: 3%;
+    border-radius: 14px;
+    background-color: white;
+    position: relative;
+    box-shadow: 5px 10px 18px #888888;
+    padding-top: 1%;
+    margin-left: 4%;
+}
+
+.reviews p {
+    line-height: 5%;
+    color: gray;
+}
+
+.reviews div {
+    padding-top: 5%;
+}
+
+.arrow {
+    position: absolute;
+    right: 40px;
+    border-radius: 50%;
+    height: 33px;
+    width: 12%;
+    height: 9vh;
+}
+
+.arrow-btn-1 {
+    background-color: white;
+    right: 90px;
+    top: 133px;
+    border: 1px solid;
+    border-color: gray;
+}
+
+.arrow-btn-2 {
+    background-color: black;
+    color: white;
+    top: 133px;
+    right: 20px;
+    border: none;
+}
+
+.stars span {
+    font-size: 14px;
+    color: gray;
+}
+
+.sign-up {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    border-radius: 23px;
+    background-color: rgba(255, 212, 130, 255);
+    padding-top: 1%;
+}
+
+.sign-up h1 {
+    margin-top: 6%;
+}
+
+.sign-up p {
+    line-height: 5%;
+    font-size: 14px;
+}
+
+.sign-up input {
+    width: 37%;
+    height: 9vh;
+    border-radius: 11px;
+    padding-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    border: none;
+}
+
+.sign-up img {
+    position: absolute;
+    left: 686px;
+    top: 219px;
+}
+
+.footer {
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.footer-logo {
+    width: 20%;
+}
+
+.footer-content {
+    width: 68%;
+    display: flex;
+    margin-left: 16%;
+    margin-top: -1%;
+}
+
+.footer-logo p {
+    line-height: 0%;
+    margin-top: 14%;
+}
+
+.footer-logo i {
+    font-size: 36px;
+    margin-top: 18%;
+}
+
+.footer-items {
+    width: 25%;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.mobile-gallary {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle-list {
+    display: none;
+}
+
+@media screen and (min-device-width: 350px) and (max-device-width: 750px) {
+
+    .links {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        width: 50%;
+    }
+
+    .logo span {
+        position: absolute;
+        top: 20%;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .toggle {
+        display: flex;
+        width: 50%;
+        padding-left: 25%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        border-bottom: 1px solid white;
+    }
+
+    .fas {
+        font-size: 50px;
+        padding-left: 50%;
+    }
+
+    #open-menu {
+        display: none;
+    }
+
+    #open-menu:checked~.toggle-list {
+        display: block;
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .logo {
+        width: 50%;
+        height: 10vh;
+    }
+
+    .logo img {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .logo span {
+        font-size: 30px;
+    }
+
+    .discover {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .discover-content h1 {
+        font-size: 30px;
+        line-height: 20%;
+        font-weight: 900;
+    }
+
+    .discover-content {
+        width: 100%;
+    }
+
+    .discover-img {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+
+    .search-bar {
+        width: 106%;
+    }
+
+    .search-icon {
+        width: 45%;
+        margin-top: 6%;
+        margin-right: 2%;
+    }
+
+    .place {
+        width: 100%;
+    }
+
+    .date {
+        width: 100%;
+    }
+    .trip-intro{
+        font-size: 10px;
+        line-height: 4%;
+    }
+    .discover-content p {
+        font-size: 9px;
+    }
+
+    .card {
+        top: 65%;
+        height: 24vh;
+        position: absolute;
+    }
+
+    .bottom-one {
+        left: 15%;
+    }
+
+    .bottom-two {
+        left: 50%
+    }
+
+    .categories-content h1 {
+        font-size: 60px;
+    }
+
+    .categories-content p {
+        line-height: 50%;
+        font-size: small;
+    }
+
+    .categories-gallery {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .gallery-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .change-btn button {
+        display: none;
+    }
+
+    .stories {
+        flex-direction: column;
+    }
+
+    .background-div {
+        height: 40vh;
+    }
+
+    .background-div img {
+        height: 46vh;
+    }
+
+    .stories-img {
+        height: 50vh;
+    }
+
+    .stories-content h1 {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+    .text-first {
+        margin-top: 15%;
+        font-size: 12px;
+    }
+
+    .stories-content {
+        height: 70vh;
+    }
+
+    .heading {
+        height: 50vh;
+        padding-left: 3%;
+        font-size: 20px;
+        line-height: 70%;
+    }
+
+    .heading img {
+        right: 0;
+        width: 26%;
+        top: 75px;
+    }
+
+    .heading {
+        height: 20vh;
+    }
+
+    .card-info {
+        width: 100%;
+    }
+
+    .destination-gallary {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .destination-one {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .destination-one img {
+        width: 100%;
+    }
+
+    .person {
+        left: 45px;
+        bottom: 28px;
+    }
+
+    .book-btn {
+        bottom: 19px;
+    }
+
+    .top-destinations-content h1 {
+        font-size: 40px;
+    }
+
+    .destination-btn {
+        width: 19%;
+        font-size: 11px;
+    }
+
+    .mobile-gallary {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .top-destinations-gallery {
+        display: none;
+    }
+
+    .about-us-img {
+        width: 100%;
+        height: 80vh;
+        margin-top: 45%;
+    }
+
+    .background-about-img {
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-content {
+        width: 100%;
+    }
+
+    .about-us-content h1 {
+        font-size: 40px;
+    }
+
+    .reviews {
+        width: 93%;
+        margin-top: 15%;
+    }
+
+    .reviews p {
+        font-size: 12px;
+    }
+
+    .arrow-btn-1 {
+        top: 90px;
+    }
+
+    .arrow-btn-2 {
+        top: 90px;
+        right: 42px;
+    }
+
+    .sign-up {
+        margin-top: 14%;
+    }
+
+    .sign-up p {
+        font-size: 10px;
+    }
+
+    .sign-up input {
+        width: 84%;
+    }
+
+    .sign-up img {
+        left: 213px;
+        top: 179px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-items {
+        width: 100%;
+    }
+}
